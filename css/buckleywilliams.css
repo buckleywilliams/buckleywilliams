@@ -149,3 +149,42 @@ p:last-child {
     float: none;
   }
 }
+
+form {
+  margin-top: 5em;
+  font-size: 80%;
+}
+
+input {
+  max-width: 100%;
+  width: 100%;
+  padding: 0.5em 0.5em 0.3em 0.5em;
+  line-height: 1.4;
+  border: 1px solid #dadada;
+  font-size: inherit;
+  font-family: inherit;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+input:focus, input:active {
+  outline: none;
+  border: 1px solid #61cbc2;
+}
+
+input[type=submit] {
+  background: #61cbc2;
+  width: auto;
+  display: inline-block;
+  border: none;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  transition: all 0.2s;
+  margin-bottom: 6px;
+  position: absolute;
+}
+
+input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active {
+  border-bottom: 4px solid #31958c;
+  margin-bottom: 0px;
+  transform: translateY(1px);
+}
