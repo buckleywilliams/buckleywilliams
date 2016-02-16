@@ -15,7 +15,7 @@
             <h1 class="title"><span>Browser</span> <span>Prototyping</span></h1>
             <h2 class="subtitle">for designers</h2>
             <h3 class="tagline">Learn to make interactive prototypes with code</h3>
-            <h4 class="when">6th April, at ustwo, London</h4>
+            <h4 class="when">6th April, London</h4>
           </header>
         </div>
       </div>
@@ -32,11 +32,15 @@
 
         <p>If you’re a designer, this course is for you. In one intensive day it will teach you how to make interactive prototypes in a web browser, not how to become a web developer. As part of a small group you will play with code and get a taste of how you can use it in your work.</p>
 
+        <a class="btn" href="http://eventbrite.com/">Sign Up</a>
       </div>
 
-      <div class="container">
 
-        <div id="map">
+
+      <div class="container">
+        <div class="inner">
+          <div id="map">
+          </div>
         </div>
       </div>
 
@@ -97,13 +101,13 @@
           zoom: 12
       });
       map.addLayer(layer);
-      var pinkPin = L.icon({
+      var venuePin = L.icon({
           iconUrl: '/images/pin.svg',
 
           iconSize:     [33, 52],
           iconAnchor:   [17, 52]
       });
-      var marker = L.marker([51.52412, -0.07714], { icon: pinkPin }).addTo(map);
+      var marker = L.marker([51.52412, -0.07714], { icon: venuePin }).addTo(map);
     </script>
   </body>
 </html>

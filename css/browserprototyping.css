@@ -108,6 +108,7 @@ body {
   font-size: 125%;
   font-weight: 400;
   font-style: normal;
+  font-family: 'PT Serif', Georgia, Times New Roman, serif;
   color: rgba(0, 0, 0, 0.9);
 }
 @media screen and (max-width: 630px) {
@@ -128,7 +129,6 @@ a:hover {
 p {
   line-height: 1.4;
   margin-bottom: 1em;
-  font-family: 'PT Serif', Georgia, Times New Roman, serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.15em;
@@ -200,7 +200,7 @@ ul {
 }
 
 .wrapper--bg {
-  background-image: url("/images/laptops.svg");
+  background-image: url("/images/placeholder.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -212,6 +212,10 @@ ul {
   -webkit-font-smoothing: antialiased;
 }
 
+.container--bg h3{
+  color: white;
+}
+
 .inner, .inner--bg {
   padding: 2em 4em;
 }
@@ -219,16 +223,6 @@ ul {
   .inner, .inner--bg {
     padding: 1em 2em;
   }
-}
-
-.inner--bg {
-  background: url("/images/browser.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.inner--bg a {
-  color: inherit;
-  border-bottom: 1px solid white;
 }
 
 .title {
@@ -368,4 +362,23 @@ h3 {
 
 #map {
   min-height: 300px;
+}
+
+.btn {
+  background: #61cbc2;
+  width: auto;
+  display: inline-block;
+  padding: 1em 1.5em;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  transition: all 0.2s;
+  font-family: 'Work Sans', Helvetica Neue, Helvetica, Segoe UI, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.25em;
+  border-bottom: none;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  border-bottom: none;
 }
