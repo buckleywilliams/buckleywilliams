@@ -108,7 +108,7 @@ body {
   font-size: 125%;
   font-weight: 400;
   font-style: normal;
-  color: #100934;
+  color: rgba(0, 0, 0, 0.9);
 }
 @media screen and (max-width: 630px) {
   body {
@@ -136,7 +136,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Work Sans', Helvetica Neue, Helvetica, Segoe UI, Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h3, h4, h5, ul {
@@ -176,7 +176,8 @@ ul {
 }
 
 .leaflet-container a {
-  color: #FF3377;
+  color: #61cbc2;
+  border-bottom: none;
 }
 .leaflet-container a:hover {
   text-decoration: none;
@@ -323,6 +324,7 @@ ul {
 h3 {
   font-size: 1.3em;
   margin-bottom: 0.75em;
+  color: rgb(44, 44, 100);
 }
 
 .nat {
