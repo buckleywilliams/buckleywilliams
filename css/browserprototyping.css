@@ -295,6 +295,10 @@ ul {
 .book .price {
   font-size: 1em;
 }
+.book li {
+  list-style: none;
+  color: rgba(44, 44, 100, 0.9);
+}
 
 h3 {
   font-size: 1.3em;
@@ -304,11 +308,11 @@ h3 {
 
 .nat, .dan {
   position: relative;
-  margin-left: 175px
+  margin-left: 175px;
+  min-height: 162px;
 }
 .nat:before, .dan:before {
   content: ' ';
-  background-image: url("/images/nat.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -321,7 +325,7 @@ h3 {
   background-image: url("/images/nat.jpg");
 }
 .dan:before {
-  background-image: url("/images/nat.jpg");
+  background-image: url("/images/dan.jpg");
 }
 @media screen and (max-width: 630px) {
   .nat:before, .dan:before {
@@ -383,4 +387,5 @@ h3 {
 
 h2 {
   text-align: center;
+  margin: 1em 0;
 }
