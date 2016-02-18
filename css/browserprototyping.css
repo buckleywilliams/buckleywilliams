@@ -300,6 +300,7 @@ ul {
   color: rgba(44, 44, 100, 0.9);
 }
 
+
 h3 {
   font-size: 1.3em;
   margin-bottom: 0.75em;
@@ -327,11 +328,29 @@ h3 {
 .dan:before {
   background-image: url("/images/dan.jpg");
 }
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 450px) {
+  .nat, .dan {
+    margin-left: 110px;
+  }
+
   .nat:before, .dan:before {
     width: 100px;
     height: 100px;
-    top: -75px;
+    left: -110px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .nat, .dan {
+    margin-left: 0;
+    margin-top: 180px;
+  }
+
+  .nat:before, .dan:before {
+    width: 150px;
+    height: 150px; /* TODO: flexible width */
+    right: 0;
+    left: auto;
+    top: -162px;
   }
 }
 
@@ -367,6 +386,7 @@ h3 {
   border: 4px solid white;
   color: white;
   background-image: none;
+  margin-bottom: 1em;
 }
 
 .signup:hover {
