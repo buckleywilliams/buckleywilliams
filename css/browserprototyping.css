@@ -373,6 +373,11 @@ h3 {
 #map {
   min-height: 350px;
 }
+@media screen and (max-width: 760px) {
+  #map {
+    display: none;
+  }
+}
 
 .signup {
   width: auto;
