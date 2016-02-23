@@ -1,8 +1,8 @@
 <!doctype html>
-<html>
+<html class="wf-worksans-n4-loading wf-ptserif-n4-loading">
   <head>
     <title>Buckley Williams</title>
-    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,700|PT+Serif:400,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,700|PT+Serif:400' rel='stylesheet' type='text/css'>
     <link href="css/bw.css" rel="stylesheet">
 
     <meta charset="utf-8">
@@ -24,7 +24,7 @@
         <header class="container">
           <div class="logo">
             <h1 class="site-title">Buckley Williams</h1>
-            <img src="assets/logo.svg" alt="Buckley Williams">
+            <a href="/"><img src="assets/logo.svg" alt="Buckley Williams"></a>
           </div>
           <nav>
             <ul class="nav">
@@ -48,7 +48,7 @@
 
                 <p>We write about our thinking and process, teach design students and run training workshops.</p>
 
-                <p>Our work involves a variety of technologies and organisations, from individual artists and arts organisations, through startups, to national newspapers. We have combined experience building connected devices, mobile applications, server-side software and tools, client-side applications and traditional websites.</p>
+                <p>Our work involved a variety of technologies and organisations, from individual artists and arts organisations, through startups, to national newspapers. We have combined experience building connected devices, mobile applications, server-side software and tools, client-side applications and more regular websites.</p>
               </div>
               <aside class="technologies">
                 <h3>Technologies we work with</h3>
@@ -82,7 +82,7 @@
     </section>
 
     <section class="container" id="projects">
-      <p class="section-intro">We’ve worked on projects ranging from software to hardware</p>
+      <p class="section-intro">Before we formed the studio we worked on projects ranging from software to hardware</p>
       <hr>
       <ul class="projects">
         <li class="project">
@@ -159,7 +159,7 @@
       <section class="footer container">
         <div class="row">
           <div class="mailing-list">
-            <form action="https://tinyletter.com/buckleywilliams" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/buckleywilliams', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">To hear about our latest projects, follow us on <a href="http://twitter.com/BuckleyWilliams">Twitter</a> or sign up to the announcements list</label></p><p><input type="text" name="email" id="tlemail" placeholder="Your email address" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /><p></p></form>
+            <form action="https://tinyletter.com/buckleywilliams" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/buckleywilliams', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">To hear about news from us follow us on <a href="http://twitter.com/BuckleyWilliams">Twitter</a>, or sign up to the announcements list</label></p><p><input type="text" name="email" id="tlemail" placeholder="Your email address" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /><p></p></form>
           </div>
           <p class="registration">Buckley Williams Ltd is registered in England and Wales, with company number 9732158. VAT registration number 222691812.</p>
         </div>
@@ -170,6 +170,23 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
   <script src="assets/cells-by-row.js"></script>
   <script src="assets/bw.js"></script>
+  <script>
+      WebFontConfig = {
+        google: {
+          families: ['Work Sans', 'PT Serif']
+        }
+      };
+
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                  '://ajax.googleapis.com/ajax/libs/webfont/1.5.6/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+  </script>
   <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
