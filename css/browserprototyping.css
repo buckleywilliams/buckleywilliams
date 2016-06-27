@@ -105,7 +105,7 @@ html {
 
 body {
   background-color: white;
-  font-size: 125%;
+  font-size: 120%;
   font-weight: 400;
   font-style: normal;
   font-family: 'PT Serif', Georgia, Times New Roman, serif;
@@ -202,6 +202,14 @@ ul {
   display: table;
 }
 
+header {
+  margin-bottom: 1em;
+}
+
+header p {
+  margin-bottom: 0 !important;
+}
+
 .wrapper--bg {
   background-image: url("/images/header.jpg");
   background-size: cover;
@@ -225,7 +233,7 @@ ul {
 }
 
 .inner{
-  padding: 2em 4em;
+  padding: 2em 8em;
 }
 .inner--bg {
   padding: 2em 4em;
@@ -237,7 +245,7 @@ ul {
 }
 
 .title {
-  margin-top: 1.2em;
+  margin-bottom: 0;
   font-size: 3.5em;
   text-align: center;
   line-height: 1;
@@ -251,6 +259,7 @@ ul {
 .subtitle {
   font-size: 2.5em;
   margin-bottom: 0.5em;
+  margin-top: 0.2em;
   text-align: center;
   line-height: 1;
 }
@@ -259,6 +268,49 @@ ul {
     font-size: 1.75em;
   }
 }
+
+.site-title {
+  height: 0;
+  width: 0;
+  margin: 0;
+  overflow: hidden; }
+
+.logo {
+  margin-top: 0;
+  margin-bottom: 1em; }
+.logo a {
+  background-image: none;
+  border-bottom: none; }
+.logo img {
+  max-width: 240px; }
+
+nav {
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-family: "Work Sans", "Franklin Gothic", "Segoe UI", Avenir, "Gill Sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1;
+  vertical-align: middle; }
+.wf-worksans-n4-loading nav {
+  font-family: "Franklin Gothic", "Segoe UI", Avenir, "Gill Sans", Helvetica, Arial, sans-serif; }
+
+.nav {
+  list-style-type: none; }
+.nav li {
+  display: inline-block;
+  margin-left: 0.3em;
+  margin-right: 0.3em; }
+.nav a {
+  padding: 0.3em;
+  color: white;
+  font-weight: normal;
+  background-image: none;
+  border-bottom: 1px solid transparent; }
+.nav a:hover {
+  border-bottom: 1px solid #46d4cd; }
+
 
 .tagline {
   max-width: 70%;
@@ -391,7 +443,7 @@ h3 {
   border: 4px solid white;
   color: white;
   background-image: none;
-  margin-bottom: 1em;
+  margin-bottom: 0;
 }
 
 .signup:hover {
@@ -414,3 +466,26 @@ h2 {
   text-align: center;
   margin: 1em 0;
 }
+
+.container {
+  max-width: 62.5em;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-top: 2em;
+}
+.container::after {
+  clear: both;
+  content: "";
+  display: table; }
+@media screen and (max-width: 720px) {
+  .container {
+    padding-left: 2em;
+    padding-right: 2em; } }
+@media screen and (max-width: 530px) {
+  .container {
+    padding-left: 1em;
+    padding-right: 1em; } }
+
