@@ -28,6 +28,7 @@
       <div class="row nav">
         <div class="sidecol">
           <a href="/" class="site-logo">
+            <h1 class="u-visuallyhidden">Buckley Williams</h1>
             <img src="/assets/img/logo.svg" alt="Buckley Williams">
           </a>
         </div>
@@ -45,6 +46,24 @@
         </div>
       </div>
       {{ page.content }}
+    </div>
+    <div class="container footer">
+      <div class="row">
+
+        <div class="sidecol">
+          <div itemscope itemtype="http://schema.org/Organization">
+            Office address<br>
+            <div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              <span itemprop="streetAddress">M48, Somerset House Studios</span>
+              <span class="line" itemprop="streetAddress">Somerset House</span>
+              <span class="line"><span itemprop="addressLocality">London</span>, <span itemprop="postalCode">WC2R 1LA</span></span>
+              <p><a href="mailto:hi@buckleywilliams.com" itemprop="email">hi@buckleywilliams.com</a></p>
+          </div>
+        </div>
+
+        <div class="maincol">
+        </div>
+      </div>
     </div>
   </body>
 </html>
