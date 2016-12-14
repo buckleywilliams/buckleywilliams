@@ -1,0 +1,23 @@
+.container {
+  @include outer-container();
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.row {
+  @include row();
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.halfcol {
+  @include span-columns(6);
+}
+
+.sidecol {
+  @include span-columns(2);
+}
+
+.maincol {
+  @include span-columns(6);
+}

@@ -1,0 +1,33 @@
+---
+---
+
+@import "grid-settings";
+@import "neat/neat";
+@import "grid";
+
+$text: #40424b;
+$turquoise: #72d2cd;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: $text;
+  background: white;
+  border-top: 5px solid $turquoise;
+  font-size: 140%;
+}
+
+.site-nav {
+  text-align: right;
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+}
