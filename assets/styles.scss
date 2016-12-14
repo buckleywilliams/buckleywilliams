@@ -7,6 +7,10 @@
 
 $text: #40424b;
 $turquoise: #72d2cd;
+$purple: #4b4e8f;
+
+$sans-serif: sans-serif;
+$serif: serif;
 
 * {
   padding: 0;
@@ -18,9 +22,27 @@ body {
   background: white;
   border-top: 5px solid $turquoise;
   font-size: 140%;
+  font-family: $serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid $turquoise;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: $purple;
+    border-color: $purple;
+  }
+}
+
+.site-logo {
+  border: none;
 }
 
 .site-nav {
+  font-family: $sans-serif;
   text-align: right;
 
   ul {
@@ -29,5 +51,6 @@ body {
 
   li {
     display: inline-block;
+    padding: 0.2em 0.5em;
   }
 }
