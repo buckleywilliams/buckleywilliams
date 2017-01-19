@@ -25,6 +25,10 @@ body {
   font-family: $serif;
 }
 
+img, object, video, iframe {
+  max-width: 100%;
+}
+
 a {
   color: inherit;
   text-decoration: none;
