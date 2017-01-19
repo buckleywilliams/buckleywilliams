@@ -3,24 +3,57 @@ layout: home
 ---
 
 <div class="row">
-  <div class="sidecol">&nbsp</div>
+  <div class="sidecol">
+    <div class="bar u-right"></div>
+  </div>
   <div class="maincol">
-    <p class="headline">A small consultancy that helps teams explore technology</p>
-    <p>We mix research, workshops and working code to help companies think about the future.</p>
-    <p>We’ve prototyped new products, investigated technology policy, taught people new digital skills and done a bunch of other stuff.</p>
+    <h2 class="headline">A small consultancy that helps teams explore technology</h2>
+    <div class="intro">
+      <p>We mix research, workshops and working code to help companies think about the future.</p>
+      <p>We’ve prototyped new products, investigated technology policy, taught people new digital skills and done a bunch of other stuff.</p>
+    </div>
+    <div class="intro-link"><a href="/projects">See all projects</a></div>
   </div>
 </div>
 
 <div class="row">
   {% for case_study in site.case_studies %}
     <div class="feature">
-      <div class="sidecol">
-        <h3 class="feature-heading">{{ case_study.name }}</h3>
+      <div class="sidecol feature-sidecol">
+        <a href="{{ case_study.url }}">
+          <h3 class="feature-heading">{{ case_study.name }}</h3>
+        </a>
         <p class="feature-description">{{ case_study.description }}</p>
       </div>
-      <div class="maincol">
-        <img src="{{ case_study.main_image }}" alt="{{ case_study.description }}">
+      <div class="maincol feature-img-wrap">
+        <a class="feature-img" href="{{ case_study.url }}">
+          <img src="{{ case_study.main_image }}" alt="{{ case_study.description }}">
+        </a>
       </div>
     </div>
   {% endfor %}
+</div>
+
+<div class="row">
+  <div class="sidecol"><div class="bar u-right"></div></div>
+  <div class="maincol">
+    <h2 class="headline">We are Nat and Dan</h2>
+    <div class="intro">
+      <p>We mix research, workshops and working code to help companies think about the future.</p>
+    </div>
+    <img src="/assets/img/natanddan.jpg" alt="Nat and Dan">
+  </div>
+</div>
+
+<div class="row">
+  <div class="sidecol"><div class="bar u-right"></div></div>
+  <div class="maincol">
+    <div class="mailing-list">
+      <form action="https://tinyletter.com/buckleywilliams" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/buckleywilliams', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+        <label for="tlemail" class="intro">To hear about our latest projects, follow us on <a href="http://twitter.com/BuckleyWilliams">Twitter</a> or sign up to the announcements list</label>
+        <input type="email" name="email" id="tlemail" class="maincol" placeholder="Your email address" />
+        <input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" class="sidecol" />
+      </form>
+    </div>
+  </div>
 </div>
