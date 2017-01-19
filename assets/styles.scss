@@ -148,6 +148,10 @@ input[type=submit] {
   }
 }
 
+.mailing-module {
+  padding: 2em 0 3em 0;
+}
+
 .mailing-list label {
   margin-bottom: 1em;
   display: block;
@@ -174,8 +178,8 @@ input[type=submit] {
 .footer a {
   &:hover {
     color: $turquoise;
-  border: none;
-}
+    border: none;
+  }
 }
 
 .registration {
@@ -184,13 +188,19 @@ input[type=submit] {
 
 // Features
 
+.feature {
+  @include clearfix;
+  margin-bottom: 2em;
+}
+
 .feature-sidecol {
   @extend .u-border-top;
 }
 
 .feature-heading {
-font-size: 2em;
-font-weight: normal;
+  font-size: 2em;
+  font-weight: normal;
+  line-height: 1.2;
   margin-bottom: 0.75em;
 }
 
