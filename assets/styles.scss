@@ -24,6 +24,7 @@ body {
   border-top: 5px solid $turquoise;
   font-size: 140%;
   font-family: $serif;
+  line-height: 1.4;
 }
 
 h1, h2, h3, h4 {
@@ -129,10 +130,16 @@ input[type=submit] {
 }
 
 .bar {
-  width: 50%;
+  width: 45%;
   height: 8px;
   margin-top: 0.3em;
+  margin-bottom: 2em;
   background-color: $turquoise;
+}
+
+.bar--alt {
+  @extend .bar;
+  width: 15%;
 }
 
 .address {
@@ -146,6 +153,35 @@ input[type=submit] {
   display: block;
 }
 
+// Footer
+
+.footer-wrapper {
+  background: $text;
+  color: white;
+  padding: 1em 0;
+}
+
+.footer {
+  font-family: $sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 0.8em;
+  background-image: url(/assets/img/monogram.svg);
+  background-repeat: no-repeat;
+  background-size: 3em 3em;
+  background-position: right bottom;
+}
+
+.footer a {
+  &:hover {
+    color: $turquoise;
+  border: none;
+}
+}
+
+.registration {
+  max-width: 30em;
+}
+
 // Features
 
 .feature-sidecol {
@@ -153,8 +189,8 @@ input[type=submit] {
 }
 
 .feature-heading {
-  font-size: 2em;
-  font-weight: normal;
+font-size: 2em;
+font-weight: normal;
   margin-bottom: 0.75em;
 }
 
