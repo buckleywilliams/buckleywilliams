@@ -22,3 +22,11 @@
   @include span-columns(6);
 }
 
+.tinycol {
+  @include span-columns(1);
+}
+
+.largecol {
+  @include span-columns(7);
+}
+
