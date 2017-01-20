@@ -46,15 +46,4 @@ layout: home
   </div>
 </div>
 
-<div class="row mailing-module">
-  <div class="sidecol"><div class="bar u-right"></div></div>
-  <div class="maincol">
-    <div class="mailing-list">
-      <form action="https://tinyletter.com/buckleywilliams" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/buckleywilliams', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-        <label for="tlemail" class="intro">To hear about our latest projects, follow us on <a href="http://twitter.com/BuckleyWilliams">Twitter</a> or sign up to the announcements list</label>
-        <input type="email" name="email" id="tlemail" class="maincol" placeholder="Your email address" />
-        <input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" class="sidecol" />
-      </form>
-    </div>
-  </div>
-</div>
+{% include mailing_list.html %}

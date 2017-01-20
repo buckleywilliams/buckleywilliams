@@ -6,7 +6,7 @@ main_image: /assets/img/projects/bulletin.jpg
 order: 5
 ---
 
-{% include large_figure.html src="/assets/img/projects/bulletin.jpg" alt="Bulletin" caption="This is na example caption. It appears below the image."%}
+{% include large_figure.html src="/assets/img/projects/bulletin.jpg" alt="Bulletin" %}
 
 <div class="row">
   <div class="sidecol">
@@ -18,7 +18,7 @@ order: 5
 
     <p><span class="name">Nat Buckley</span> It’s a small, almost pocket-sized radio device that’s connected to the internet. It aims to keep you informed about things you might be interested in. It will tell you the weather, the time, cricket scores, latest tweets from your friends, latest blog posts from kottke.org, these kinds of things.</p>
 
-    [image]
+{% include small_figure.html src="/assets/img/projects/bulletin/with_echo.jpg" alt="We bought an Amazon Echo Dot for the office to understand what it’s like to use other voice interfaces" caption="We bought an Amazon Echo Dot for the office to understand what it’s like to use other voice interfaces"%}
 
     <p><span class="name">Dan</span> This came about because Russell was interested in two things. One is having interfaces that aren’t screen-based, interfaces that are audio based instead. Instead of getting push notifications to your phone you get things read out or spoken.</p>
 
@@ -30,7 +30,7 @@ order: 5
 
     <p>What Russell wanted was a thing that was just like that, but connected to the internet, and playing stuff off of the internet. It would be really simple, and just work. No faffing. Turns out, adding the “just connected to the internet” bit and keeping it simple is kind of hard.</p>
 
-{% include figure.html src="/assets/img/projects/bulletin.jpg" alt="Bulletin" caption="Here is an example caption. Captions will need some styling!"%}
+{% include figure.html src="/assets/img/projects/bulletin/inside.jpg" alt="Inside it’s a Raspberry Pi with a small speaker and a couple of potentiometers" caption="Inside it’s a Raspberry Pi with a small speaker and a couple of potentiometers" %}
 
     <p><span class="name">Dan</span> Physically it’s quite simple, because it is quite passive. You want to be able to ignore it. The form factor comes from wanting a thing that is radio-like, can fit a Raspberry Pi and a speaker.</p>
 
@@ -56,7 +56,7 @@ order: 5
 
     <p><span class="name">Nat</span> I like that. Satisfyingly generic. But that was really the goal. We wanted it be indistinguishable from a radio playing in the background, which helps you ignore it. You’d think that reading out a notification is it’s primary function, but I think one of the main features is the ease with which it can be ignored. It’s not vying for your attention.</p>
 
-{% include small_figure.html src="/assets/img/projects/bulletin.jpg" alt="Bulletin" caption="Here is an example caption. Captions will need some styling!"%}
+{% include small_figure.html src="/assets/img/projects/bulletin/sketches.jpg" alt="Bulletin" caption="We designed the object to easily blend in at home or in the office"%}
 
     <p><span class="name">Nat</span> Inside a Raspberry Pi Zero runs Node.js, which means we can write a bunch of stuff in JavaScript. It’s running the Radiodan platform.</p>
 
@@ -66,7 +66,7 @@ order: 5
 
     <p>We also wrote software which takes things from the internet and creates phrases out of them. Those phrases need to be turned into audio. We use text to speech software on the Pi to do that. Once that is done the audio is then played. The scheduler generates the bulletins every fifteen minutes.</p>
 
-    [image]
+{% include multi_small_figure.html src1="/assets/img/projects/bulletin/potentiometer.jpg" src2="/assets/img/projects/bulletin/dials.jpg" alt="It was important to us that the dials had a satisfying feel" caption="It was important to us that the dials had a satisfying feel" %}
 
     <p><span class="name">Dan</span> The genetic algorithm and the creation of bulletins initially felt complicated, but it also felt justified. Russell had a very vague idea of what he wanted to explore; we had to figure out what that meant.</p>
 
@@ -84,7 +84,7 @@ order: 5
 
     <p><span class="name">Nat</span> If anything were to happen to the box, like the SD card got corrupted, or there was a flood or anything like that then the AI’s progress will be lost forever, like tears in rain.</p>
 
-    [image]
+{% include figure.html src="/assets/img/projects/bulletin/finished_object.jpg" alt="Bulletin" %}
 
     <p><span class="name">Dan</span> It’s meant to be an iterative object. There are a lot of things we’d like to do, tweak and polish, but the important thing is to get it into Russell’s hands as early as possible, and see what it’s like for him when he’s using it in his everyday life.</p>
 

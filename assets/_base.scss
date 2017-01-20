@@ -48,6 +48,16 @@ p, figure, blockquote, ul, ol, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1em;
 }
 
+
+.content {
+  margin-bottom: 3em;
+}
+
+.content .row {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 input[type=text], input[type=email] {
   border: 1px solid $border;
   padding: 0.4em 0.5em;
