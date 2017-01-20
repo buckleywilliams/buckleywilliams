@@ -1,0 +1,59 @@
+.feature {
+  @include clearfix;
+  margin-bottom: 2em;
+}
+
+.feature-sidecol {
+  @extend .u-border-top;
+}
+
+.feature-heading {
+  font-size: 1.5em;
+  line-height: 1.2;
+  margin-bottom: 0.75em;
+}
+
+.feature-img-wrap {
+  position: relative;
+}
+
+.feature-img img {
+  display: block;
+}
+
+.feature-img-wrap:hover .feature-img::before,
+.feature-img-wrap:hover .feature-img::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+@supports (filter: grayscale(1)) {
+  .feature-img-wrap:hover .feature-img img {
+    filter: brightness(1.1) grayscale(1);
+  }
+}
+
+/* main color */
+@supports (mix-blend-mode: multiply) {
+  .feature-img-wrap:hover .feature-img::before {
+    z-index: 1;
+    background: $turquoise;
+    mix-blend-mode: multiply;
+  }
+}
+
+/* bring in the secondary tones */
+@supports (mix-blend-mode: lighten) {
+  .feature-img-wrap:hover .feature-img::after {
+    z-index: 2;
+    background: rgb(73, 76, 131);
+    mix-blend-mode: lighten;
+  }
+}
+
+

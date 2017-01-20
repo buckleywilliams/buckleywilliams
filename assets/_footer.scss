@@ -1,0 +1,30 @@
+.footer-wrapper {
+  background: $text;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 1em 0;
+}
+
+.footer {
+  font-family: $sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 0.8em;
+
+  & .row {
+    background-image: url(/assets/img/monogram.svg);
+    background-repeat: no-repeat;
+    background-size: 3em 3em;
+    background-position: right bottom;
+  }
+}
+
+.footer a {
+  &:hover {
+    color: $turquoise;
+    border: none;
+  }
+}
+
+.registration {
+  max-width: 30em;
+}
+

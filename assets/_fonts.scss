@@ -1,0 +1,262 @@
+@font-face {
+    font-family: 'PT Serif';
+    src: url('/assets/fonts/pt_serif-web-bold-webfont.eot');
+    src: url('/assets/fonts/pt_serif-web-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/pt_serif-web-bold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/pt_serif-web-bold-webfont.woff') format('woff'),
+         url('/assets/fonts/pt_serif-web-bold-webfont.ttf') format('truetype'),
+         url('/assets/fonts/pt_serif-web-bold-webfont.svg#pt_serifbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'PT Serif';
+    src: url('/assets/assets/fonts/pt_serif-web-italic-webfont.eot');
+    src: url('/assets/fonts/pt_serif-web-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/pt_serif-web-italic-webfont.woff2') format('woff2'),
+         url('/assets/fonts/pt_serif-web-italic-webfont.woff') format('woff'),
+         url('/assets/fonts/pt_serif-web-italic-webfont.ttf') format('truetype'),
+         url('/assets/fonts/pt_serif-web-italic-webfont.svg#pt_serifitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PT Serif';
+    src: url('/assets/fonts/pt_serif-web-regular-webfont.eot');
+    src: url('/assets/fonts/pt_serif-web-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/pt_serif-web-regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/pt_serif-web-regular-webfont.woff') format('woff'),
+         url('/assets/fonts/pt_serif-web-regular-webfont.ttf') format('truetype'),
+         url('/assets/fonts/pt_serif-web-regular-webfont.svg#pt_serifregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/fonts/worksans-black-webfont.eot');
+    src: url('/assets/fonts/worksans-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/worksans-black-webfont.woff2') format('woff2'),
+         url('/assets/fonts/worksans-black-webfont.woff') format('woff'),
+         url('/assets/fonts/worksans-black-webfont.ttf') format('truetype'),
+         url('/assets/fonts/worksans-black-webfont.svg#work_sansblack') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/fonts/worksans-bold-webfont.eot');
+    src: url('/assets/fonts/worksans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/worksans-bold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/worksans-bold-webfont.woff') format('woff'),
+         url('/assets/fonts/worksans-bold-webfont.ttf') format('truetype'),
+         url('/assets/fonts/worksans-bold-webfont.svg#work_sansbold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/fonts/worksans-extrabold-webfont.eot');
+    src: url('/assets/fonts/worksans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/worksans-extrabold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/worksans-extrabold-webfont.woff') format('woff'),
+         url('/assets/fonts/worksans-extrabold-webfont.ttf') format('truetype'),
+         url('/assets/fonts/worksans-extrabold-webfont.svg#work_sansextrabold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/fonts/worksans-semibold-webfont.eot');
+    src: url('/assets/fonts/worksans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/worksans-semibold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/worksans-semibold-webfont.woff') format('woff'),
+         url('/assets/fonts/worksans-semibold-webfont.ttf') format('truetype'),
+         url('/assets/fonts/worksans-semibold-webfont.svg#work_sanssemibold') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'PT Serif';
+    src: url('/assets/fonts/pt_serif-web-bold-webfont.eot');
+    src: url('/assets/fonts/pt_serif-web-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/pt_serif-web-bold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/pt_serif-web-bold-webfont.woff') format('woff'),
+         url('/assets/fonts/pt_serif-web-bold-webfont.ttf') format('truetype'),
+         url('/assets/fonts/pt_serif-web-bold-webfont.svg#pt_serifbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'PT Serif';
+    src: url('/assets/fonts/pt_serif-web-italic-webfont.eot');
+    src: url('/assets/fonts/pt_serif-web-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/pt_serif-web-italic-webfont.woff2') format('woff2'),
+         url('/assets/fonts/pt_serif-web-italic-webfont.woff') format('woff'),
+         url('/assets/fonts/pt_serif-web-italic-webfont.ttf') format('truetype'),
+         url('/assets/fonts/pt_serif-web-italic-webfont.svg#pt_serifitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PT Serif';
+    src: url('/assets/fonts/pt_serif-web-regular-webfont.eot');
+    src: url('/assets/fonts/pt_serif-web-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/pt_serif-web-regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/pt_serif-web-regular-webfont.woff') format('woff'),
+         url('/assets/fonts/pt_serif-web-regular-webfont.ttf') format('truetype'),
+         url('/assets/fonts/pt_serif-web-regular-webfont.svg#pt_serifregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/fonts/worksans-black-webfont.eot');
+    src: url('/assets/fonts/worksans-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/worksans-black-webfont.woff2') format('woff2'),
+         url('/assets/fonts/worksans-black-webfont.woff') format('woff'),
+         url('/assets/fonts/worksans-black-webfont.ttf') format('truetype'),
+         url('/assets/fonts/worksans-black-webfont.svg#work_sansblack') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/fonts/worksans-bold-webfont.eot');
+    src: url('/assets/fonts/worksans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/worksans-bold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/worksans-bold-webfont.woff') format('woff'),
+         url('/assets/fonts/worksans-bold-webfont.ttf') format('truetype'),
+         url('/assets/fonts/worksans-bold-webfont.svg#work_sansbold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/fonts/worksans-extrabold-webfont.eot');
+    src: url('/assets/fonts/worksans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/worksans-extrabold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/worksans-extrabold-webfont.woff') format('woff'),
+         url('/assets/fonts/worksans-extrabold-webfont.ttf') format('truetype'),
+         url('/assets/fonts/worksans-extrabold-webfont.svg#work_sansextrabold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/fonts/worksans-semibold-webfont.eot');
+    src: url('/assets/fonts/worksans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/worksans-semibold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/worksans-semibold-webfont.woff') format('woff'),
+         url('/assets/fonts/worksans-semibold-webfont.ttf') format('truetype'),
+         url('/assets/fonts/worksans-semibold-webfont.svg#work_sanssemibold') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'PT Serif';
+    src: url('/assets/fonts/pt_serif-web-bold-webfont.eot');
+    src: url('/assets/fonts/pt_serif-web-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/pt_serif-web-bold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/pt_serif-web-bold-webfont.woff') format('woff'),
+         url('/assets/fonts/pt_serif-web-bold-webfont.ttf') format('truetype'),
+         url('/assets/fonts/pt_serif-web-bold-webfont.svg#pt_serifbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'PT Serif';
+    src: url('/assets/fonts/pt_serif-web-italic-webfont.eot');
+    src: url('/assets/fonts/pt_serif-web-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/pt_serif-web-italic-webfont.woff2') format('woff2'),
+         url('/assets/fonts/pt_serif-web-italic-webfont.woff') format('woff'),
+         url('/assets/fonts/pt_serif-web-italic-webfont.ttf') format('truetype'),
+         url('/assets/fonts/pt_serif-web-italic-webfont.svg#pt_serifitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PT Serif';
+    src: url('/assets/fonts/pt_serif-web-regular-webfont.eot');
+    src: url('/assets/fonts/pt_serif-web-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/pt_serif-web-regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/pt_serif-web-regular-webfont.woff') format('woff'),
+         url('/assets/fonts/pt_serif-web-regular-webfont.ttf') format('truetype'),
+         url('/assets/fonts/pt_serif-web-regular-webfont.svg#pt_serifregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/fonts/worksans-black-webfont.eot');
+    src: url('/assets/fonts/worksans-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/worksans-black-webfont.woff2') format('woff2'),
+         url('/assets/fonts/worksans-black-webfont.woff') format('woff'),
+         url('/assets/fonts/worksans-black-webfont.ttf') format('truetype'),
+         url('/assets/fonts/worksans-black-webfont.svg#work_sansblack') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/fonts/worksans-bold-webfont.eot');
+    src: url('/assets/fonts/worksans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/worksans-bold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/worksans-bold-webfont.woff') format('woff'),
+         url('/assets/fonts/worksans-bold-webfont.ttf') format('truetype'),
+         url('/assets/fonts/worksans-bold-webfont.svg#work_sansbold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/fonts/worksans-extrabold-webfont.eot');
+    src: url('/assets/fonts/worksans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/worksans-extrabold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/worksans-extrabold-webfont.woff') format('woff'),
+         url('/assets/fonts/worksans-extrabold-webfont.ttf') format('truetype'),
+         url('/assets/fonts/worksans-extrabold-webfont.svg#work_sansextrabold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/fonts/worksans-semibold-webfont.eot');
+    src: url('/assets/fonts/worksans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/worksans-semibold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/worksans-semibold-webfont.woff') format('woff'),
+         url('/assets/fonts/worksans-semibold-webfont.ttf') format('truetype'),
+         url('/assets/fonts/worksans-semibold-webfont.svg#work_sanssemibold') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
