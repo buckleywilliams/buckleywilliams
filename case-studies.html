@@ -1,0 +1,37 @@
+---
+layout: home
+permalink: /case-studies/index.html
+---
+
+<div class="row">
+  <div class="sidecol">
+    <div class="bar u-right"></div>
+  </div>
+  <div class="maincol">
+    <h2 class="headline">Case studies</h2>
+    <div class="intro">
+      <p>Detailed conversations about the projects we’ve done.</p>
+    </div>
+    <div class="intro-link"><a href="/projects">See all projects</a></div>
+  </div>
+</div>
+
+<div class="row">
+  {% assign sorted = (site.case_studies | sort: 'order') | reverse %}
+  {% for case_study in sorted %}
+    <div class="feature">
+      <div class="sidecol feature-sidecol">
+        <a href="{{ case_study.url }}">
+          <h3 class="feature-heading">{{ case_study.name }}</h3>
+        </a>
+        <p class="feature-description">{{ case_study.description }}</p>
+      </div>
+      <div class="maincol feature-img-wrap">
+        <a class="feature-img" href="{{ case_study.url }}">
+          <img src="{{ case_study.main_image }}" alt="{{ case_study.description }}">
+        </a>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
