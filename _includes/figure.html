@@ -1,6 +1,15 @@
-<figure>
-  <img src="{{ include.src }}" alt="{{ include.alt }}">
-  <figcaption>
+  </div>
+</div>
+
+<figure class="row">
+  <figcaption class="sidecol">
     <p>{{ include.caption }}</p>
   </figcaption>
+  <div class="maincol"><img src="{{ include.src }}" alt="{{ include.alt }}"></div>
 </figure>
+
+<div class="row">
+  <div class="sidecol">
+    &nbsp;
+  </div>
+  <div class="maincol">
