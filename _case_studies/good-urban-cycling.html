@@ -6,4 +6,55 @@ main_image: /assets/img/projects/good_urban_cycling.jpg
 order: 3
 ---
 
-Case study, hello
+{% include large_figure.html src="/assets/img/projects/good_urban_cycling.jpg" alt="Good Urban cycling" %}
+
+<div class="row">
+  <div class="sidecol">
+    &nbsp;
+  </div>
+  <div class="maincol">
+    <p><span class="name">Nat Buckley</span> The brief was to develop a hardware prototype of a cycling navigation device that would have an iOS app counterpart. The problem we were solving for the Good Urban Co. was that it’s impossible to work out whether a device like this is worth pursuing without making something that works so you can test the idea. So we built a device that could be mounted to a bike and tested in a city.</p>
+
+    <p>The plan was that, if their idea was validated, it would open up opportunities to get external funding.</p>
+
+    [image]
+
+    <p><span class="name">Dan Williams</span> What were they trying to solve? What was not good enough about the existing devices?</p>
+
+    <p><span class="name">Nat</span> There’s a whole category of devices that have navigation in them, but they’re not designed for navigation. It’s sort of an afterthought, add-on feature.</p>
+
+    <p>My cycling computer falls into that category: you can load a route into it, but it doesn’t have a map. It has live GPS tracking, but it doesn’t have any other information; you can see an arrow on the screen but that’s it. So you don’t know anything about where you are and you certainly cannot re-route as you cycle around.</p>
+
+    <p><span class="name">Dan</span> And the existing solution is to get your phone out and look at a map on that. That’s hard to do in a hurry, and it’s not very safe.</p>
+
+    <p><span class="name">Nat</span> And using your phone continuously drains your battery really quickly. There is a whole batch of devices coming out that give you vague directions — they point in a certain direction like a compass, and let you figure out the route for yourself — but that’s not efficient when you have a meeting and need to be on time.</p>
+
+    <p><span class="name">Dan</span> Plus when you get to a junction, that compass device isn’t particularly helpful. It doesn’t give you an overview of what’s going on, where you’re able to go, how does that map to what you’re currently faced with.</p>
+
+    <p><span class="name">Nat</span> Exactly.</p>
+
+    <p><span class="name">Dan</span> The idea was, if we could get a display that would give some kind of simple representation of a map, that would give you more contextual information than a compass arrow. And to figure this out we’d need to try it out, and iterate, and do lots of designs.</p>
+
+    [image]
+
+    <p><span class="name">Nat</span> The biggest challenge was that all of this makes sense in principle, but there isn’t a way to quickly prototype in practice with an existing device. So to even try the idea out, we had to build the hardware device itself and an app that would communicate with it.</p>
+
+    <p><span class="name">Dan</span> So how did we go about that? We decided that we could do a two-week sprint where we’d get a first working thing that would be really…</p>
+
+    <p><span class="name">Nat</span> Crude.</p>
+
+    <p><span class="name">Dan</span> Yeah, really cut-down, nowhere near the form factor that it would finally be. But it would have an e-ink screen, and it would do navigation, so that we could start trying it out.</p>
+
+    <p><span class="name">Nat</span> We made a laser-cut plastic enclosure for the hardware device, which was attached to a bicycle with rubber bands. Very low-tech. We prioritised testing the core idea: is having some more contextual information about your route and getting turn-by-turn navigation better than the existing options?</p>
+
+    <p><span class="name">Dan</span> The end result of the two weeks was that we had an app that we could type a destination into and it would pull up the directions, and that would connect to the hardware with Bluetooth. We were able to prototype it quickly because we used Tom Taylor’s City Cyclist app code to get the navigation data. And then the hardware would…</p>
+
+    <p><span class="name">Nat</span> …display what to do next, and how close you are to your next turn. It would tell you which direction to go, and what to do at a junction. It was still quite basic; we didn’t have the time to actually display a visual representation of a map that you were following.</p>
+
+    <p><span class="name">Dan</span> We were essentially showing the instruction coming back from the CycleStreets API, which has pretty good text descriptions. “Take the second left” kind of thing.</p>
+
+    <p><span class="name">Nat</span> Yeah, they’re great. It’s already ready for turn-by-turn navigation. That was another thing we were interested in seeing: whether those instructions were good enough in the city, where GPS coverage might occasionally be quite patchy.</p>
+
+    <p>Now that they had the device and the app — and they could test it — they were able to decide whether their idea was worth pursuing, and whether it was worth thinking about developing the hardware prototype further.</p>
+  </div>
+</div>
