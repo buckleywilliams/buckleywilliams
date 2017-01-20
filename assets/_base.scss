@@ -121,6 +121,11 @@ input[type=submit] {
   text-align: right;
 }
 
+.page-intro {
+  @extend .intro;
+  font-family: $sans-serif;
+}
+
 .bar {
   width: 45%;
   height: 8px;

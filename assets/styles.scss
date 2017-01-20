@@ -9,7 +9,7 @@ $text: #40424b;
 $turquoise: #72d2cd;
 $purple: #4b4e8f;
 $border: #cccdce;
-
+$grey: #9e9fa1;
 $sans-serif: 'Work Sans', sans-serif;
 $serif: 'PT Serif', serif;
 
@@ -17,6 +17,14 @@ $serif: 'PT Serif', serif;
 @import "base";
 @import "features";
 @import "footer";
+
+// Case studies
+
+p .name {
+  display: block;
+  font-family: $sans-serif;
+  color: $grey;
+}
 
 
 // Utility classes

@@ -9,7 +9,84 @@ order: 5
 
 <div class="row">
   <div class="sidecol">
+    &nbsp;
   </div>
   <div class="maincol">
+
+    <p><span class="name">Dan Williams</span> Let’s talk about this project we did for Russell Davies. The radio, which we called Bulletin in the end. So, what is it?</p>
+
+    <p><span class="name">Nat Buckley</span> It’s a small, almost pocket-sized radio device that’s connected to the internet. It aims to keep you informed about things you might be interested in. It will tell you the weather, the time, cricket scores, latest tweets from your friends, latest blog posts from kottke.org, these kinds of things.</p>
+
+    [image]
+
+    <p><span class="name">Dan</span> This came about because Russell was interested in two things. One is having interfaces that aren’t screen-based, interfaces that are audio based instead. Instead of getting push notifications to your phone you get things read out or spoken.</p>
+
+    <p>The other thing he’s interested in is interfaces that are more ambient, more in the background, that aren’t trying to draw your attention exclusively to them. Things that you can have in your environment that you learn from.</p>
+
+    <p><span class="name">Nat</span> We didn’t know what kind of stuff Russell likes, so we decided to write a genetic algorithm that over time—using a feedback knob—will build up an understanding of what Russell likes to hear in his radio bulletins.</p>
+
+    <p><span class="name">Dan</span> Russell’s initial interest started out when he saw the Sounds Cans I made years ago. The cans were really simple. All each one had was an accelerometer to detect how it was being moved and picked up, an Arduino Lilypad which would just play an MP3 file off an SD card, and a speaker. That’s it. It was the simplest thing, each just played one audio clip.</p>
+
+    <p>What Russell wanted was a thing that was just like that, but connected to the internet, and playing stuff off of the internet. It would be really simple, and just work. No faffing. Turns out, adding the “just connected to the internet” bit and keeping it simple is kind of hard.</p>
+
+    [image]
+
+    <p><span class="name">Dan</span> Physically it’s quite simple, because it is quite passive. You want to be able to ignore it. The form factor comes from wanting a thing that is radio-like, can fit a Raspberry Pi and a speaker.</p>
+
+    <p><span class="name">Nat</span> We needed a way of adjusting the volume and a way of giving the genetic algorithm feedback. Those are really the only interactions you can have with the device right now.</p>
+
+    <p><span class="name">Dan</span> We needed a way of saying: do I like this thing you're saying, or do I hate it?</p>
+
+    <p><span class="name">Nat</span> Yeah.</p>
+
+    <p><span class="name">Dan</span> We’ve got these really nice, tactile knobs that have a satisfying click as you turn them.</p>
+
+    <p><span class="name">Nat</span> The click is quite soft. We designed it to be used indoors, possibly an office environment, or in the home where you have easy access to power and wifi. In almost all the ways we could think of we designed it be very radio-like and not draw very much attention to itself.</p>
+
+    <p><span class="name">Dan</span> Quite unobtrusive. Just leave it on your desk or on the side table.</p>
+
+    <p><span class="name">Nat</span> It doesn’t look out of place.</p>
+
+    <p><span class="name">Dan</span> No, it doesn‘t look like someone’s hacky Arduino project. There are no bits of wires sticking out. But it also doesn’t look distinctive. It’s not shouting out for attention in any way.</p>
+
+    <p><span class="name">Nat</span> Yeah. It doesn’t look very tech-y.</p>
+
+    <p><span class="name">Dan</span> Yeah. It’s a satisfyingly generic object.</p>
+
+    <p><span class="name">Nat</span> I like that. Satisfyingly generic. But that was really the goal. We wanted it be indistinguishable from a radio playing in the background, which helps you ignore it. You’d think that reading out a notification is it’s primary function, but I think one of the main features is the ease with which it can be ignored. It’s not vying for your attention.</p>
+
+    [image]
+
+    <p><span class="name">Nat</span> Inside a Raspberry Pi Zero runs Node.js, which means we can write a bunch of stuff in JavaScript. It’s running the Radiodan platform.</p>
+
+    <p><span class="name">Dan</span> Oh yeah, the BBC R&D thing for building your own internet-connected radios!</p>
+
+    <p><span class="name">Nat</span> Yeah, and it’s extremely good. It’s an audio player, which will listen to physical inputs. The whole platform is designed to run as soon as the Raspberry Pi boots. It takes care of all sorts of really annoying things that you’d have to do yourself to make a device like that work. It’s been pretty amazing using it. It simplified our workflow a lot. All we had to do was design and write the genetic algorithm which decides what information to play, and which will eventually distill the perfect news bulletin for Russell.</p>
+
+    <p>We also wrote software which takes things from the internet and creates phrases out of them. Those phrases need to be turned into audio. We use text to speech software on the Pi to do that. Once that is done the audio is then played. The scheduler generates the bulletins every fifteen minutes.</p>
+
+    [image]
+
+    <p><span class="name">Dan</span> The genetic algorithm and the creation of bulletins initially felt complicated, but it also felt justified. Russell had a very vague idea of what he wanted to explore; we had to figure out what that meant.</p>
+
+    <p>We settled on the idea of it being like top of the hour news, weather, sport, traffic, but personalised. Or maybe a little bit like BERG’s Little Printer, but instead of paper it’s audio based. We settled on the idea of having lots of different types of things it could say. We weren't sure which kinds Russell would be into and which things he wouldn't be into.</p>
+
+    <p><span class="name">Nat</span> Turns out, we totally misjudged how much Russell was into cricket.</p>
+
+    <p><span class="name">Dan</span> Right! But we’d made a thing that would learn what he liked, instead of having to figure out what he liked ourselves.</p>
+
+    <p><span class="name">Nat</span> Let the AI handle the difficult thing. The future of design is automation!</p>
+
+    <p>What’s also interesting is that the algorithm only lives on the device. It doesn’t communicate with a central service somewhere in the cloud. It doesn’t talk to our servers, and it doesn’t learn from Russell and apply it to other people. It’s really all about Russell, without us having any insight into how the algorithm is performing or how it’s learning, or anything really about it’s continuing existence.</p>
+
+    <p><span class="name">Dan</span> Right, it’s... how did Justin Pickard describe it? “Small batch monogamous AI”? It’s a different model to Siri or Alexa. It’s not like that bit in Her, where the protagonist realises the AI he’s chatting to is also having thousands of other conversations at the same time. It’s all in the box.</p>
+
+    <p><span class="name">Nat</span> If anything were to happen to the box, like the SD card got corrupted, or there was a flood or anything like that then the AI’s progress will be lost forever, like tears in rain.</p>
+
+    [image]
+
+    <p><span class="name">Dan</span> It’s meant to be an iterative object. There are a lot of things we’d like to do, tweak and polish, but the important thing is to get it into Russell’s hands as early as possible, and see what it’s like for him when he’s using it in his everyday life.</p>
+
+    <p>Perhaps other people could tweak it and build on it. Russell is adding new functionality to it, which is quite nice.</p>
   </div>
 </div>
