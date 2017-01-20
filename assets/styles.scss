@@ -26,6 +26,12 @@ p .name {
   color: $grey;
 }
 
+.case-study-page {
+  .content p {
+    @include span-columns(7);
+  }
+}
+
 
 // Utility classes
 
