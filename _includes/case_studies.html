@@ -1,0 +1,18 @@
+<div class="row">
+  {% assign sorted = (site.case_studies | sort: 'order') | reverse %}
+  {% for case_study in sorted %}
+    <div class="feature">
+      <div class="sidecol feature-sidecol">
+        <a href="{{ case_study.url }}">
+          <h3 class="feature-heading">{{ case_study.name }}</h3>
+        </a>
+        <p class="feature-description">{{ case_study.description }}</p>
+      </div>
+      <div class="maincol feature-img-wrap">
+        <a class="feature-img" href="{{ case_study.url }}">
+          <img src="{{ case_study.main_image }}" alt="{{ case_study.description }}">
+        </a>
+      </div>
+    </div>
+  {% endfor %}
+</div>
