@@ -91,6 +91,12 @@ h5 {
   padding-bottom: 0;
 }
 
+.client, .partners {
+  font-size: 0.9em;
+  color: $grey;
+  margin-bottom: 0;
+}
+
 input[type=text], input[type=email] {
   border: 1px solid $border;
   padding: 0.4em 0.5em;
@@ -173,6 +179,7 @@ input[type=submit] {
 .page-intro {
   @extend .intro;
   font-family: $sans-serif;
+  margin-bottom: 1em;
 }
 
 .bar {

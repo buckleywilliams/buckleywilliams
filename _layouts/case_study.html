@@ -11,6 +11,10 @@ layout: base
       <h2 class="headline">{{ page.title }}</h2>
       <div class="page-intro">
         <p>{{ page.description }}</p>
+        <h3 class="client">Client: {{ page.client }}</h3>
+        {% if page.partners != nil and page.partners!= "" %}
+          <h3 class="partners">Partners: {{ page.partners }}</h3>
+        {% endif %}
       </div>
     </div>
   </div>
