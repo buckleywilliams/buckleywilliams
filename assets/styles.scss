@@ -31,7 +31,7 @@ p .name {
     @include span-columns(7);
   }
 
-  .content h4, .content h5 {
+  .content h4, .content h5, .content h3 {
     @include span-columns(7);
   }
 }
