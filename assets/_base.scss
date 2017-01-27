@@ -156,6 +156,7 @@ input[type=submit] {
 .site-logo {
   border: none;
   display: inline-block;
+  width: 100%;
 
   @include for-phone-only {
     max-width: 80%;
