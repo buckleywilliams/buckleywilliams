@@ -16,17 +16,87 @@
 
 .sidecol {
   @include span-columns(2);
+
+  @include for-phone-only {
+    @include span-columns(8);
+    @include omega(1);
+
+    margin-bottom: 1em;
+  }
+
+  @include for-tablet-portrait-up {
+    @include span-columns(8);
+    @include omega(1);
+
+    margin-bottom: 1em;
+  }
 }
 
 .maincol {
   @include span-columns(6);
+
+  @include for-phone-only {
+    @include span-columns(8);
+    @include omega(1);
+  }
+
+  @include for-tablet-portrait-up {
+    @include span-columns(8);
+    @include omega(1);
+  }
+}
+
+.maincol--offset {
+  @extend .maincol;
+  @include shift(2);
+
+  @include for-phone-only {
+    @include shift(0);
+  }
+
+  @include for-tablet-portrait-up {
+    @include shift(0);
+  }
 }
 
 .tinycol {
   @include span-columns(1);
+
+  @include for-phone-only {
+    @include span-columns(8);
+    @include omega(1);
+  }
+
+  @include for-tablet-portrait-up {
+    @include span-columns(8);
+    @include omega(1);
+  }
 }
 
 .largecol {
   @include span-columns(7);
+
+  @include for-phone-only {
+    @include span-columns(8);
+    @include omega(1);
+  }
+
+  @include for-tablet-portrait-up {
+    @include span-columns(8);
+    @include omega(1);
+  }
+}
+
+.largecol--offset {
+  @extend .largecol;
+  @include shift(1);
+
+  @include for-phone-only {
+    @include shift(0);
+  }
+
+  @include for-tablet-portrait-up {
+    @include shift(0);
+  }
 }
 

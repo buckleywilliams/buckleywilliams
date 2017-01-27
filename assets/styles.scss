@@ -29,10 +29,20 @@ p .name {
 .case-study-page, .page {
   .content p {
     @include span-columns(7);
+
+    @include for-phone-only {
+      @include span-columns(8);
+      @include omega(1);
+    }
   }
 
   .content h4, .content h5, .content h3 {
     @include span-columns(7);
+
+    @include for-phone-only {
+      @include span-columns(8);
+      @include omega(1);
+    }
   }
 }
 
