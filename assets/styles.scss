@@ -26,8 +26,12 @@ p .name {
   color: $grey;
 }
 
-.case-study-page {
+.case-study-page, .page {
   .content p {
+    @include span-columns(7);
+  }
+
+  .content h4, .content h5 {
     @include span-columns(7);
   }
 }
