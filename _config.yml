@@ -30,7 +30,7 @@ collections:
     permalink: /case-studies/:path/
   projects:
     output: true
-    permalink: /work/:path/
+    permalink: /projects/:path/
 
 # Build settings
 markdown: kramdown

@@ -1,0 +1,20 @@
+.project-tile {
+  @include span-columns(4 of 12);
+  @include omega(3);
+  border-top: 8px solid $turquoise;
+  margin-bottom: 1em;
+
+  a {
+    border: none;
+  }
+}
+
+.project-tile-heading {
+  margin-top: 0.1em;
+  margin-bottom: 0;
+}
+
+.project-tile-description {
+  font-size: 90%;
+}
+

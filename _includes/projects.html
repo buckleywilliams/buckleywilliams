@@ -1,0 +1,11 @@
+<div class="row">
+  {% assign sorted = (site.projects | sort: 'order') | reverse %}
+  {% for project in sorted %}
+    <div class="project-tile">
+      <a href="{{ project.url }}">
+        <img src="{{ project.thumb }}" alt="{{ project.description }}">
+        <h3 class="project-tile-heading">{{ project.name }}</h3>
+      </a>
+    </div>
+  {% endfor %}
+</div>
