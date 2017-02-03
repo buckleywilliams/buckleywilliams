@@ -1,7 +1,12 @@
 <!doctype html>
 <html>
   <head>
-    <title>{% if page.title != nil and page.title != "" %}{{ page.title }} —{% endif %} Buckley Williams</title>
+    
+    {% capture @title %}{% if page.title != nil and page.title != "" %}{{ page.title }} — {% endif %}Buckley Williams{% endcapture %}
+    {% capture @description %}{% if page.description != nil and page.description != "" %}{{ page.description | xml_escape }}{% else %}A small consultancy that helps teams explore technology. We mix research, workshops and working code to help companies think about the future.{% endif %}{% endcapture %}
+    {% capture @image %}{% if page.main_image != nil and page.main_image != "" %}{{ page.main_image | absolute_url }}{% else %}http://buckleywilliams.com/assets/img/card.png{% endif %}{% endcapture %}
+
+    <title>{{@title}}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="r&d, research and development, design, studio, software development, hardware, prototyping">
@@ -10,9 +15,15 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@BuckleyWilliams">
     <meta name="twitter:creator" content="@BuckleyWilliams">
-    <meta name="twitter:title" content="{% if page.title != nil and page.title != "" %}{{ page.title }} —{% endif %} Buckley Williams">
-    <meta name="twitter:description" content="{% if page.description != nil and page.description != "" %}{{ page.description | xml_escape }}{% else %}A small consultancy that helps teams explore technology. We mix research, workshops and working code to help companies think about the future.{% endif %}">
-    <meta name="twitter:image" content="{% if page.main_image != nil and page.main_image != "" %}{{ page.main_image | absolute_url }}{% else %}http://buckleywilliams.com/assets/img/card.png{% endif %}">
+    <meta name="twitter:title" content="{{ @title }}">
+    <meta name="twitter:description" content="{{ @description }}">
+    <meta name="twitter:image" content="{{ @image }}">
+
+    <meta property="og:url" content="{{page.url | absolute_url}}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{ @title }}" />
+    <meta property="og:description" content="{{ @description }}" />
+    <meta property="og:image" content="{{ @image }}" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
