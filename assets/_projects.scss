@@ -1,6 +1,5 @@
 .project-tile {
   @include span-columns(4 of 12);
-  @include omega(3n);
 
   @include for-phone-only {
     @include fill-parent;
@@ -8,8 +7,12 @@
   }
 
   @include for-tablet-portrait-up {
-    @include span-columns(4);
+    @include span-columns(4 of 8);
     @include omega (2n);
+  }
+
+  @include for-tablet-landscape-up {
+    @include omega(3n);
   }
 
   border-top: 8px solid $turquoise;
