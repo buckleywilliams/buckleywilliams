@@ -8,12 +8,14 @@ layout: base
       <div class="bar u-right"></div>
     </div>
     <div class="maincol">
+      <h3 class="category">Project</h3>
       <h2 class="headline">{{ page.title }}</h2>
       <div class="page-intro">
         <h3 class="client">Client: {{ page.client }}</h3>
         {% if page.partners != nil and page.partners != "" %}
           <h3 class="partners">Partners: {{ page.partners }}</h3>
         {% endif %}
+        <h3 class="year">{{ page.year }}</h3>
       </div>
     </div>
   </div>

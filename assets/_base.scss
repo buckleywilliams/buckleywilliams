@@ -101,7 +101,7 @@ h5 {
   padding-bottom: 0;
 }
 
-.client, .partners {
+.client, .partners, .year {
   font-size: 0.9em;
   color: $grey;
   margin-bottom: 0;
@@ -234,6 +234,12 @@ input[type=submit] {
   @extend .intro;
   font-family: $sans-serif;
   margin-bottom: 1em;
+}
+
+.category {
+  color: $grey;
+  margin-bottom: 0;
+  font-size: 1.2em;
 }
 
 .bar {
