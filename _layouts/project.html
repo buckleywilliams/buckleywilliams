@@ -1,3 +1,25 @@
 ---
 layout: base
 ---
+<div class="project-page">
+
+  <div class="row">
+    <div class="sidecol">
+      <div class="bar u-right"></div>
+    </div>
+    <div class="maincol">
+      <h2 class="headline">{{ page.title }}</h2>
+      <div class="page-intro">
+        <h3 class="client">Client: {{ page.client }}</h3>
+        {% if page.partners != nil and page.partners != "" %}
+          <h3 class="partners">Partners: {{ page.partners }}</h3>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    {{ content }}
+  </div>
+
+</div>

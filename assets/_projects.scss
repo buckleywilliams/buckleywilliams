@@ -3,6 +3,7 @@
   @include omega(3);
   border-top: 8px solid $turquoise;
   margin-bottom: 1em;
+  min-height: 22em;
 
   a {
     border: none;
@@ -15,6 +16,14 @@
 }
 
 .project-tile-description {
-  font-size: 90%;
+  font-size: 80%;
+  font-family: $sans-serif;
+  color: $grey;
+
+  a:hover & {
+    color: inherit;
+    transition: inherit;
+  }
 }
+
 
