@@ -11,7 +11,11 @@ layout: base
       <h3 class="category">Project</h3>
       <h2 class="headline">{{ page.title }}</h2>
       <div class="page-intro">
-        <h3 class="client">Client: {{ page.client }}</h3>
+        {% if page.client != nil and page.client != "" %}
+          <h3 class="client">Client: {{ page.client }}</h3>
+        {% else %}
+          <h3 class="client">Internal project</h3>
+        {% endif %}
         {% if page.partners != nil and page.partners != "" %}
           <h3 class="partners">Partners: {{ page.partners }}</h3>
         {% endif %}
