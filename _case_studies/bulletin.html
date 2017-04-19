@@ -12,13 +12,14 @@ order: 4
 <div class="row">
   <div class="maincol--offset">
 
+
     <p><span class="name">Dan Williams</span> Let’s talk about this project we did for Russell Davies. The radio, which we called Bulletin in the end. So, what is it?</p>
 
     <p><span class="name">Nat Buckley</span> It’s a small, almost pocket-sized radio device that’s connected to the internet. It aims to keep you informed about things you might be interested in. It will tell you the weather, the time, cricket scores, latest tweets from your friends, latest blog posts from kottke.org, these kinds of things.</p>
 
-{% include small_figure.html src="/assets/img/projects/bulletin/with_echo.jpg" alt="We bought an Amazon Echo Dot for the office to understand what it’s like to use other voice interfaces" caption="We bought an Amazon Echo Dot for the office to understand what it’s like to use other voice interfaces"%}
-
     <p><span class="name">Dan</span> This came about because Russell was interested in two things. One is having interfaces that aren’t screen-based, interfaces that are audio based instead. Instead of getting push notifications to your phone you get things read out or spoken.</p>
+
+    {% include small_figure.html src="/assets/img/projects/bulletin/with_echo.jpg" alt="We bought an Amazon Echo Dot for the office to understand what it’s like to use other voice interfaces" caption="We bought an Amazon Echo Dot for the office to understand what it’s like to use other voice interfaces"%}
 
     <p>The other thing he’s interested in is interfaces that are more ambient, more in the background, that aren’t trying to draw your attention exclusively to them. Things that you can have in your environment that you learn from.</p>
 
@@ -32,6 +33,7 @@ order: 4
 
     <p><span class="name">Dan</span> Physically it’s quite simple, because it is quite passive. You want to be able to ignore it. The form factor comes from wanting a thing that is radio-like, can fit a Raspberry Pi and a speaker.</p>
 
+    {% include small_figure.html src="/assets/img/projects/bulletin/bulletin.gif" alt="Bulletin" %}
     <p><span class="name">Nat</span> We needed a way of adjusting the volume and a way of giving the genetic algorithm feedback. Those are really the only interactions you can have with the device right now.</p>
 
     <p><span class="name">Dan</span> We needed a way of saying: do I like this thing you're saying, or do I hate it?</p>
@@ -42,11 +44,12 @@ order: 4
 
     <p><span class="name">Nat</span> The click is quite soft. We designed it to be used indoors, possibly an office environment, or in the home where you have easy access to power and wifi. In almost all the ways we could think of we designed it be very radio-like and not draw very much attention to itself.</p>
 
+{% include small_figure.html src="/assets/img/projects/bulletin/shelf.jpg" alt="Bulletin" %}
     <p><span class="name">Dan</span> Quite unobtrusive. Just leave it on your desk or on the side table.</p>
 
     <p><span class="name">Nat</span> It doesn’t look out of place.</p>
 
-    <p><span class="name">Dan</span> No, it doesn‘t look like someone’s hacky Arduino project. There are no bits of wires sticking out. But it also doesn’t look distinctive. It’s not shouting out for attention in any way.</p>
+    <p><span class="name">Dan</span> No, it doesn’t look like someone’s hacky Arduino project. There are no bits of wires sticking out. But it also doesn’t look distinctive. It’s not shouting out for attention in any way.</p>
 
     <p><span class="name">Nat</span> Yeah. It doesn’t look very tech-y.</p>
 
@@ -56,7 +59,7 @@ order: 4
 
 {% include small_figure.html src="/assets/img/projects/bulletin/sketches.jpg" alt="We designed the object to easily blend in at home or in the office" caption="We designed the object to easily blend in at home or in the office"%}
 
-    <p><span class="name">Nat</span> Inside a Raspberry Pi Zero runs Node.js, which means we can write a bunch of stuff in JavaScript. It’s running the <a href="http://radiodan.net">Radiodan platform</a>.</p>
+    <p>Inside a Raspberry Pi Zero runs Node.js, which means we can write a bunch of stuff in JavaScript. It’s running the <a href="http://radiodan.net">Radiodan platform</a>.</p>
 
     <p><span class="name">Dan</span> Oh yeah, the BBC R&D thing for building your own internet-connected radios!</p>
 
@@ -82,7 +85,7 @@ order: 4
 
     <p><span class="name">Nat</span> If anything were to happen to the box, like the SD card got corrupted, or there was a flood or anything like that then the AI’s progress will be lost forever, like tears in rain.</p>
 
-{% include figure.html src="/assets/img/projects/bulletin/finished_object.jpg" alt="Bulletin" %}
+{% include figure.html src="/assets/img/projects/bulletin/feedback_dial.jpg" alt="Bulletin" %}
 
     <p><span class="name">Dan</span> It’s meant to be an iterative object. There are a lot of things we’d like to do, tweak and polish, but the important thing is to get it into Russell’s hands as early as possible, and see what it’s like for him when he’s using it in his everyday life.</p>
 
