@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    
+
     {% capture @title %}{% if page.title != nil and page.title != "" %}{{ page.title }} — {% endif %}Buckley Williams{% endcapture %}
     {% capture @description %}{% if page.description != nil and page.description != "" %}{{ page.description | xml_escape }}{% else %}A small consultancy that helps teams explore technology. We mix research, workshops and working code to help companies think about the future.{% endif %}{% endcapture %}
     {% capture @image %}{% if page.main_image != nil and page.main_image != "" %}{{ page.main_image | absolute_url }}{% else %}http://buckleywilliams.com/assets/img/card.png{% endif %}{% endcapture %}
@@ -47,12 +47,9 @@
         <div class="maincol">
           <nav class="site-nav">
             <ul>
-              <li><a href="/case-studies">Case studies</a></li>
               <li><a href="/projects">Projects</a></li>
+              <li><a href="/about">About</a></li>
               <li><a href="http://words.buckleywilliams.com">Writing</a></li>
-              <li><a href="/browserprototyping">Training</a></li>
-              <li><a href="/services">Services</a></li>
-              <li><a href="mailto:hi@buckleywilliams.com">Contact</a></li>
             </ul>
           </nav>
         </div>
