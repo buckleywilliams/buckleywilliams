@@ -28,7 +28,7 @@ p .name {
 }
 
 .case-study-page, .page {
-  .content p {
+  .content p, .content img {
     @include span-columns(7);
 
     @include for-phone-only {
