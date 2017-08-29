@@ -3,14 +3,14 @@
   <head>
 
     {% capture @title %}{% if page.title != nil and page.title != "" %}{{ page.title }} — {% endif %}Buckley Williams{% endcapture %}
-    {% capture @description %}{% if page.description != nil and page.description != "" %}{{ page.description | xml_escape }}{% else %}A small consultancy that helps teams explore technology. We mix research, workshops and working code to help companies think about the future.{% endif %}{% endcapture %}
+    {% capture @description %}{% if page.description != nil and page.description != "" %}{{ page.description | xml_escape }}{% else %} We’re a small product design studio. We team up with organisations to see how digital technologies could transform their products and services, and help them invent new ones.{% endif %}{% endcapture %}
     {% capture @image %}{% if page.main_image != nil and page.main_image != "" %}{{ page.main_image | absolute_url }}{% else %}http://buckleywilliams.com/assets/img/card.png{% endif %}{% endcapture %}
 
     <title>{{@title}}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="r&d, research and development, design, studio, software development, hardware, prototyping">
-    <meta name="description" content="A small consultancy that helps teams explore technology. We mix research, workshops and working code to help companies think about the future.">
+    <meta name="description" content="We’re a small product design studio. We team up with organisations to see how digital technologies could transform their products and services, and help them invent new ones.">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@BuckleyWilliams">
