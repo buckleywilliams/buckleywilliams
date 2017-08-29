@@ -16,7 +16,7 @@
 title: Buckley Williams
 email: hi@buckleywilliams.com
 description: > # this means to ignore newlines until "baseurl:"
-  We’re a small product design studio. We team up with organisations to see how digital technologies could transform their products and services, and help them invent new ones.
+  We were a small product design studio. We teamed up with organisations to see how digital technologies could transform their products and services, and help them invent new ones.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://buckleywilliams.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: BuckleyWilliams
